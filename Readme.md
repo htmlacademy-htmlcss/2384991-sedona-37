@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Kseniia Lazarov](https://up.htmlacademy.ru/htmlcss/37/user/2384991).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина
+Малиновская] (https://htmlacademy.ru/profile/irina-malinovskaya)
 
 ---
 
