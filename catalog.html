@@ -6,45 +6,41 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="page-header">
-    <nav class="navigation">
-
-          <a class="navigation-link" href="index.html">
-            <img class="page-header-logo" src="images/header/logo.svg" width="140" height="70" alt="Welcome to the gorgeous Sedona, because the Grand-Canion sucks!">
-          </a>
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html">
-            Главная
-          </a>
-        </li>
+    <header class="page-header" data-test="header">
+      <nav class="navigation">
+        <a class="navigation-link" href="index.html">
+          <img class="page-header-logo" src="images/header/logo.svg" width="140" height="70" alt="Логотип">
+        </a>
+        <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">
-              О Седоне
-            </a>
-        </li>
-        <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">
-                Гостиницы
-              </a>
-        </li>
-      </ul>
-    </nav>
-      <ul class="navigation-user navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link visually-hidden" href="#">Поиск</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Избранное</a>
-        </li>
-        <li class="navigation-item">
-          <a class="button navigation-button" href="#">Хочу сюда!</a>
-        </li>
-      </ul>
-  </header>
-<main class="main-inner">
-  <header class="inner-header">
-    <div class="inner-container">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седонe</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link  navigation-link-current" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-user navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link visually-hidden" href="#">Поиск</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Избранное</a>
+          </li>
+          <li class="navigation-item">
+            <a class="button navigation-button" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+       </nav>
+    </header>
+    <main class="main-inner main-container">
+      <div class="page-container">
+      <header class="inner-header">
+        <section class="filtres" data-test="filter">
+          <div class="filtres-wrapper">
+            <div class="catalog-navigation-wrapper">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs-list">
       <li class="breadcrumbs-item">
@@ -55,10 +51,11 @@
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link">Гостиницы</a>
       </li>
-    </ul>
-    <section class="filtres" data-test="filter">
+    </ul></div>
+      <div class="catalog-filtres-wrapper">
       <h2 class="visually-hidden">Фильтры для выбора гостиницы</h2>
-      <form class="catalog-filtres">
+      <div class="infrastructure-wrapper">
+        <form class="catalog-filtres">
       <fieldset class="filtres-feauters">
         <legend class="catalog-filtres-title"> Инфраструктура:</legend>
         <ul class="filtres-list">
@@ -76,7 +73,8 @@
           </li>
         </ul>
       </fieldset></div>
-      <fieldset class="filtres-housing">
+      <div class="housing-wrapper">
+        <fieldset class="filtres-housing">
         <legend class="catalog-filtres-title"> Тип жилья:</legend>
         <ul class="filtres-list">
           <li class="filtres-item">
@@ -92,16 +90,18 @@
           <input class="control-input" type="radio" name="housing" value="appartments">Аппартаменты</label>
           </li>
         </ul>
-      </fieldset>
+      </fieldset></div>
+      <div class="price-wrapper">
       <fieldset class="filtres-price">
         <legend class="catalog-filtres-title">Стоимость, ₽:</legend>
-      </fieldset>
-      <button class="button button-use" type="submit">Применить</button>
+      </fieldset></div>
+      <div class="use-wrapper"><button class="button button-use" type="submit">Применить</button>
       <button class="button button-cancel" type="submit">Сбросить</button>
-    </form>
+    </form></div></div></div>
     </section>
   </header>
  <section class="search" data-test="catalog">
+  <div class="search-wrapper">
       <h2 class="search-title">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
@@ -110,22 +110,18 @@
         </select>
         <ul class="view-button-list">
           <li class="view-button-item">
-            <a class="button button-light button-current" href="#">
-              <img class="navigation-icon" src="images/view/view-1.svg" width="48" height="48" alt="Показать карточки">
-            </a>
+            <a href="#" class="button button-light button-current">Показать карточки</a>
           </li>
           <li class="view-button-item">
-            <a href="#" class="button button-light">
-              <img class="navigation-icon" src="images/view/view-2.svg" width="48" height="48" alt="Показать в виде слайдера">
-            </a>
+            <a href="#" class="button button-light">Показать в виде слайдера</a>
           </li>
           <li class="view-button-item">
-            <a href="#" class="button button-light">
-              <img class="navigation-icon" src="images/view/view-3.svg" width="48" height="48" alt="Показать список">
-            </a>
+            <a href="#" class="button button-light">Показать список</a>
           </li>
-        </ul>
+        </ul></div>
+        <div class="catalog-container">
         <ul class="product-list">
+          <div class="card-wrapper">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <figure class="product-card-image">
@@ -146,6 +142,8 @@
             <span  class="button product-card-rating">Рейтинг: 8,5</span>
           </p>
           </li>
+        </div>
+          <div class="card-wrapper">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <figure class="product-card-image">
@@ -166,6 +164,8 @@
               <span class="button product-card-rating">Рейтинг: 9,2</span>
             </p>
         </li>
+      </div>
+      <div class="card-wrapper">
         <li class="product-card">
           <a class="product-card-link" href="product.html">
             <figure class="product-card-image">
@@ -186,6 +186,8 @@
             <span class="button product-card-rating">Рейтинг: 6,9</span>
           </p>
         </li>
+      </div>
+      <div class="card-wrapper">
         <li class="product-card">
           <a class="product-card-link" href="product.html">
             <figure class="product-card-image">
@@ -206,7 +208,9 @@
             <span  class="button product-card-rating">Рейтинг: 5,0</span>
           </p>
         </li>
+      </div>
       </ul>
+    </div>
       <ul class="pagination-list">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -235,15 +239,14 @@
         <input type="email" class="subscribe-mail" name="subscribe" placeholder="Ваш e-mail" required>
         <input type="submit" value="Подписаться" class="button subscribe-button">
         </form>
-
-          </section>
-</main>
-
-
-  <footer class="page-footer">
-    <section class="footer-social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="footer-social-list">
+      </section>
+    </div>
+  </main>
+    <footer class="page-footer" data-test="footer">
+  <div class="page-footer-container">
+  <section class="footer-social">
+    <h2 class="visually-hidden">Социальные сети</h2>
+    <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="button" href="https://vk.com/htmlacademy">
           <img class="footer-icon" src="images/footer/logo-vk.svg" alt="VK" width="24" height="14">
@@ -257,23 +260,23 @@
       <li class="footer-social-item">
         <a class="button" href="https://www.youtube.com/user/htmlacademyru">
           <img class="footer-icon" src="images/footer/logo-youtube.svg" alt="Youtube" width="22" height="17">
-        </li>
-      </a>
-    </ul>
-    </section>
-    <section class="footer-phone">
-      <h2 class="visually-hidden">Номер телефона</h2>
-      <address class="footer-contacts-adress">
-        <a class="footer-contacts-adress-phone" href="tel:88121212">+7 (812) 812-12-12</a>
-      </address>
-
-      <section class="footer-web">
-        <h2 class="visually-hidden">Web-адрес</h2>
-        <a class="button" href="https://htmlacademy.ru/">
-          <img class="footer-logo" src="images/footer/logo-html-academy.svg" alt=".htmlacademy" width="115" height="33">
         </a>
-      </section>
-    </section>
-  </footer>
+      </li>
+    </ul>
+  </section>
+  <section class="footer-phone">
+    <h2 class="visually-hidden">Номер телефона</h2>
+    <address class="footer-contacts-adress">
+      <a class="footer-contacts-adress-phone" href="tel:88121212">+7 (812) 812-12-12</a>
+    </address>
+  </section>
+  <section class="footer-web">
+    <h2 class="visually-hidden">Web-адрес</h2>
+    <a class="button" href="https://htmlacademy.ru/">
+      <img class="footer-logo" src="images/footer/logo-html-academy.svg" alt=".htmlacademy" width="115" height="33">
+    </a>
+  </section>
+      </div>
+    </footer>
 </body>
 </html>
